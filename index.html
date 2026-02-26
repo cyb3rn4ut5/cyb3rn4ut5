@@ -1,1 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CYB3RN4UT5</title>
+  <meta name="description" content="CYB3RN4UT5 - Международная команда, участвующая в IT Cup 2026. Решаем бизнес-кейсы с помощью технологий.">
+  <meta name="keywords" content="IT Cup, Changellenge, бизнес-кейсы, международная команда, IT чемпионат">
+  <link rel="icon" type="image/x-icon" href="assets/cybernauts.ico" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+  
+  <style>
+    @font-face {
+      font-family: 'MOKOTO Glitch 1';
+      src: url('fonts/mokoto-mokoto-regular-glitch-mark-2-400.otf') format('opentype'),
+           url('fonts/mokoto-mokoto-regular-glitch-mark-2-400.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
 
+    #preloader-typewriter {
+      font-family: 'MOKOTO Glitch 1', 'Inter', sans-serif;
+      font-size: 3.5rem;
+      color: #00ffff;
+      position: relative;
+      letter-spacing: 2px;
+    }
+
+    .logo-name {
+      font-family: 'MOKOTO Glitch 1', 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+      background: linear-gradient(135deg, #00ffff, #ff00ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Bigger preloader logo */
+    .preloader-logo {
+      width: 220px !important;
+      height: auto !important;
+    }
+
+    @media (max-width: 768px) {
+      #preloader-typewriter {
+        font-size: 2.5rem;
+      }
+      
+      .logo-name {
+        font-size: 1.5rem;
+      }
+      
+      .preloader-logo {
+        width: 180px !important;
+      }
+    }
+
+    @media (max-width: 480px) {
+      #preloader-typewriter {
+        font-size: 2rem;
+      }
+      
+      .logo-name {
+        font-size: 1.3rem;
+      }
+      
+      .preloader-logo {
+        width: 150px !important;
+      }
+    }
+  </style>
+  
+  <script>
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    };
+    
+    window.onload = function() {
+      window.scrollTo(0, 0);
+    };
+    
+    if (history.scrollRestoration) {
+      history.scrollRestoration = 'manual';
+    }
+  </script>
+</head>
+<body>
+  <!-- Stars Background -->
+  <div class="stars"></div>
+  <div class="nebula"></div>
+  
+  <!-- Mouse Trail Effect -->
+  <div class="mouse-trail"></div>
+  
+  <!-- Loading Bar -->
+  <div class="loading-bar" id="loadingBar"></div>
+
+  <!-- Preloader Overlay -->
+  <div class="preloader-overlay" id="preloaderOverlay">
+    <div class="preloader-content">
+      <img src="assets/cybernauts-logo.png" alt="CYB3RN4UT5 Logo" class="preloader-logo" />
+      <div class="preloader-title">
+        <span id="preloader-typewriter"></span>
+      </div>
+      <div class="preloader-subtitle" id="preloader-subtitle"></div>
+    </div>
+  </div>
+
+  <!-- All page content wrapped here -->
+  <div id="pageContent">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="assets/cybernauts-logo.png" alt="CYB3RN4UT5 Logo" class="logo" />
+        <div class="logo-text">
+          <span class="logo-name">CYB3RN4UT5</span>
+          <span class="logo-tagline">IT Cup 2026</span>
+        </div>
+      </div>
+
+      <!-- Language Toggle -->
+      <div class="language-toggle">
+        <button class="lang-btn active" id="langEn">EN</button>
+        <span class="lang-separator">|</span>
+        <button class="lang-btn" id="langRu">RU</button>
+      </div>
+
+      <!-- Hamburger Button -->
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active" data-en="Home" data-ru="Главная">Home</a></li>
+        <li><a href="#mission" class="nav-link" data-en="Mission" data-ru="Миссия">Mission</a></li>
+        <li><a href="#crew" class="nav-link" data-en="Crew" data-ru="Команда">Crew</a></li>
+        <li><a href="#join" class="nav-cta" data-en="Join Mission" data-ru="Присоединиться">Join Mission</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section id="home" class="hero-section">
+        <div class="container">
+          <!-- Floating Elements - Business/Tech Theme -->
+          <div class="floating-elements">
+            <div class="floating-element element-1">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="floating-element element-2">
+              <i class="fas fa-robot"></i>
+            </div>
+            <div class="floating-element element-3">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="floating-element element-4">
+              <i class="fas fa-server"></i>
+            </div>
+            <div class="floating-element element-5">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="floating-element element-6">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+          </div>
+          
+          <!-- Hero Content -->
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span><i class="fas fa-trophy"></i> <span data-en="Finalists IT CUP 2025" data-ru="Финалисты IT Cup 2025">Finalists IT CUP 2025</span></span>
+            </div>
+            
+            <h1 class="hero-title">
+              <span data-en="Solving Business Challenges" data-ru="Решаем бизнес-задачи">Solving Business Challenges</span>
+              <span class="highlight-gradient" data-en="with Technology" data-ru="с помощью технологий">with Technology</span>
+            </h1>
+            
+            <p class="hero-subtitle" data-en="International team of students from RANEPA and Moscow Aviation Institute. We turn complex business problems into technological solutions."
+               data-ru="Интернациональная команда студентов РАНХиГС и МАИ. Превращаем сложные бизнес-задачи в технологические решения.">
+              International team of students from RANEPA and Moscow Aviation Institute. We turn complex business problems into technological solutions.
+            </p>
+            
+            <div class="hero-actions">
+              <a href="#mission" class="hero-btn primary">
+                <span data-en="Our Mission" data-ru="Наша миссия">Our Mission</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="#crew" class="hero-btn secondary">
+                <span data-en="Meet the Team" data-ru="Знакомьтесь с командой">Meet the Team</span>
+                <i class="fas fa-users"></i>
+              </a>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-number" data-count="2600">2600+</span>
+                <span class="stat-label" data-en="Participants 2025" data-ru="Участников 2025">Participants 2025</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-count="1">1</span>
+                <span class="stat-label" data-en="International Team in Finals" data-ru="Интернац. команда в финале">International Team in Finals</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-count="2">2</span>
+                <span class="stat-label" data-en="Nominations" data-ru="Номинации">Nominations</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mission Statement Section -->
+      <section id="mission" class="mission-section">
+        <div class="container">
+          <div class="section-header">
+            <h2><span data-en="Our" data-ru="Наша">Our</span> <span class="highlight" data-en="Mission" data-ru="Миссия">Mission</span></h2>
+            <p class="section-subtitle" data-en="Why we participate in IT Cup 2026"
+               data-ru="Почему мы участвуем в IT Cup 2026">
+              Why we participate in IT Cup 2026
+            </p>
+          </div>
+          
+          <div class="mission-grid">
+            <!-- Card 1 -->
+            <div class="mission-card">
+              <div class="mission-icon">
+                <i class="fas fa-rocket"></i>
+              </div>
+              <h3 data-en="First Step in IT" data-ru="Первый шаг в IT">First Step in IT</h3>
+              <p data-en="You can participate without any preparation or hard skills. Perfect for students starting their journey in tech."
+                 data-ru="Вы можете участвовать без специальной подготовки. Идеально для студентов, начинающих путь в IT.">
+                You can participate without any preparation or hard skills. Perfect for students starting their journey in tech.
+              </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="mission-card">
+              <div class="mission-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <h3 data-en="Improve Soft Skills" data-ru="Развитие Soft Skills">Improve Soft Skills</h3>
+              <p data-en="Immerse yourself in real business processes, learn teamwork, presentation skills, and product decision-making."
+                 data-ru="Погрузитесь в реальные бизнес-процессы, научитесь работать в команде, презентовать решения и принимать продуктовые решения.">
+                Immerse yourself in real business processes, learn teamwork, presentation skills, and product decision-making.
+              </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="mission-card">
+              <div class="mission-icon">
+                <i class="fas fa-medal"></i>
+              </div>
+              <h3 data-en="Prove Yourself" data-ru="Проявите себя">Prove Yourself</h3>
+              <p data-en="Get mentorship from experts, receive feedback from market professionals, and become part of a closed community."
+                 data-ru="Получите поддержку ментора, обратную связь от экспертов и станьте частью закрытого сообщества.">
+                Get mentorship from experts, receive feedback from market professionals, and become part of a closed community.
+              </p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="mission-card">
+              <div class="mission-icon">
+                <i class="fas fa-bolt"></i>
+              </div>
+              <h3 data-en="Easy Start" data-ru="Легкий старт">Easy Start</h3>
+              <p data-en="No hard skills required to begin. Learn by doing with real business cases from industry leaders."
+                 data-ru="Для начала не требуются хард-скиллы. Учитесь на реальных бизнес-кейсах от лидеров индустрии.">
+                No hard skills required to begin. Learn by doing with real business cases from industry leaders.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Crew Section - 4 Members -->
+      <section id="crew" class="crew-section">
+        <div class="container">
+          <div class="section-header">
+            <h2><span data-en="The" data-ru="Наша">The</span> <span class="highlight" data-en="Crew" data-ru="Команда">Crew</span></h2>
+            <p class="section-subtitle" data-en="Meet the team behind CYB3RN4UT5"
+               data-ru="Познакомьтесь с командой CYB3RN4UT5">
+              Meet the team behind CYB3RN4UT5
+            </p>
+          </div>
+          
+          <div class="crew-grid">
+            <!-- Siona / Сиона -->
+            <div class="crew-member">
+              <div class="member-card">
+                <div class="member-header">
+                  <div class="member-image">
+                    <img src="assets/team/siona.png" alt="Siona" class="member-photo"/>
+                  </div>
+                  <h3><span data-en="Siona" data-ru="Сиона">Siona</span></h3>
+                  <h4 data-en="Captain · Business Analyst" data-ru="Капитан · Бизнес-аналитик">Captain · Business Analyst</h4>
+                  
+                  <!-- Contact icons row (always visible) -->
+                  <div class="member-contacts-row">
+                    <a href="https://t.me/sio_1000" class="contact-icon" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+                    <a href="https://in.linkedin.com/in/siona-dsouza-698a5a316" class="contact-icon" target="_blank" title="Linkedin"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:dsouzasiona100@gmail.com" class="contact-icon" title="Email"><i class="fas fa-envelope"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <div class="member-education">
+                    <p><i class="fas fa-graduation-cap"></i> <span data-en="Master's in International Management" data-ru="Магистратура по международному менеджменту">Master's in International Management</span></p>
+                    <p><i class="fas fa-university"></i> <span data-en="Russian Presidential Academy (RANEPA)" data-ru="РАНХиГС">Russian Presidential Academy (RANEPA)</span></p>
+                    <p><i class="fas fa-calendar"></i> 2025 - 2027</p>
+                  </div>
+                  
+                  <div class="member-skills">
+                    <div class="skill">
+                      <span class="skill-name" data-en="Business Analysis" data-ru="Бизнес-анализ">Business Analysis</span>
+                      <div class="skill-bar">
+                        <div class="skill-level" style="width: 95%"></div>
+                      </div>
+                    </div>
+                    <div class="skill">
+                      <span class="skill-name" data-en="Team Leadership" data-ru="Лидерство">Team Leadership</span>
+                      <div class="skill-bar">
+                        <div class="skill-level" style="width: 92%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Anna / Анна -->
+            <div class="crew-member">
+              <div class="member-card">
+                <div class="member-header">
+                  <div class="member-image">
+                    <img src="assets/team/anna.png" alt="Anna" class="member-photo"/>
+                  </div>
+                  <h3><span data-en="Anna" data-ru="Анна">Anna</span></h3>
+                  <h4 data-en="Financial Analyst · Strategist" data-ru="Финансовый аналитик · Стратег">Financial Analyst · Strategist</h4>
+                  
+                  <!-- Contact icons row (always visible) -->
+                  <div class="member-contacts-row">
+                    <a href="https://t.me/anka_050" class="contact-icon" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+                    <a href="https://github.com/anna" class="contact-icon" target="_blank" title="Linkedin"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:anna@gmail.com" class="contact-icon" title="Email"><i class="fas fa-envelope"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <div class="member-education">
+                    <p><i class="fas fa-graduation-cap"></i> <span data-en="Bachelor's in Finance" data-ru="Бакалавриат по финансам">Bachelor's in Finance</span></p>
+                    <p><i class="fas fa-university"></i> <span data-en="Russian Presidential Academy (RANEPA)" data-ru="РАНХиГС">Russian Presidential Academy (RANEPA)</span></p>
+                    <p><i class="fas fa-calendar"></i> 2024 - 2028</p>
+                  </div>
+                  
+                  <div class="member-skills">
+                    <div class="skill">
+                      <span class="skill-name" data-en="Financial Analysis" data-ru="Финансовый анализ">Financial Analysis</span>
+                      <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%"></div>
+                      </div>
+                    </div>
+                    <div class="skill">
+                      <span class="skill-name" data-en="Strategic Planning" data-ru="Стратегическое планирование">Strategic Planning</span>
+                      <div class="skill-bar">
+                        <div class="skill-level" style="width: 88%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Aditya / Адитя -->
+            <div class="crew-member">
+              <div class="member-card">
+                <div class="member-header">
+                  <div class="member-image">
+                    <img src="assets/team/aditya.png" alt="Aditya" class="member-photo"/>
+                  </div>
+                  <h3><span data-en="Aditya" data-ru="Адитя">Aditya</span></h3>
+                  <h4 data-en="Programmer · Systems Architect" data-ru="Программист · Системный архитектор">Programmer · Systems Architect</h4>
+                  
+                  <!-- Contact icons row (always visible) -->
+                  <div class="member-contacts-row">
+                    <a href="https://t.me/pirates0ftware" class="contact-icon" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+                    <a href="https://github.com/samsepi0l-kali" class="contact-icon" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:adityalok001@gmail.com" class="contact-icon" title="Email"><i class="fas fa-envelope"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <div class="member-education">
+                    <p><i class="fas fa-graduation-cap"></i> <span data-en="Bachelor's in Spacecraft Engineering" data-ru="Бакалавриат по проектированию космических аппаратов">Bachelor's in Spacecraft Engineering</span></p>
+                    <p><i class="fas fa-university"></i> <span data-en="Moscow Aviation Institute (MAI)" data-ru="МАИ">Moscow Aviation Institute (MAI)</span></p>
+                    <p><i class="fas fa-calendar"></i> 2024 - 2028</p>
+                  </div>
+                  
+                  <div class="member-skills">
+                    <div class="skill">
+                      <span class="skill-name" data-en="Programming" data-ru="Программирование">Programming</span>
+                      <div class="skill-bar">
+                        <div class="skill-level" style="width: 94%"></div>
+                      </div>
+                    </div>
+                    <div class="skill">
+                      <span class="skill-name" data-en="System Architecture" data-ru="Системная архитектура">System Architecture</span>
+                      <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mostafa / Мостафа -->
+            <div class="crew-member">
+              <div class="member-card">
+                <div class="member-header">
+                  <div class="member-image">
+                    <img src="assets/team/mostafa.png" alt="Mostafa" class="member-photo"/>
+                  </div>
+                  <h3><span data-en="Mostafa" data-ru="Мостафа">Mostafa</span></h3>
+                  <h4 data-en="UI/UX Designer · Creative Lead" data-ru="UI/UX дизайнер · Креативный лидер">UI/UX Designer · Creative Lead</h4>
+                  
+                  <!-- Contact icons row (always visible) -->
+                  <div class="member-contacts-row">
+                    <a href="https://t.me/m0stafaAsh" class="contact-icon" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+                    <a href="https://github.com/mostafa" class="contact-icon" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:mostafa@cybernauts.team" class="contact-icon" title="Email"><i class="fas fa-envelope"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <div class="member-education">
+                    <p><i class="fas fa-graduation-cap"></i> <span data-en="Bachelor's in Aircraft Engineering" data-ru="Бакалавриат по проектированию летательных аппаратов">Bachelor's in Aircraft Engineering</span></p>
+                    <p><i class="fas fa-university"></i> <span data-en="Moscow Aviation Institute (MAI)" data-ru="МАИ">Moscow Aviation Institute (MAI)</span></p>
+                    <p><i class="fas fa-calendar"></i> 2024 - 2028</p>
+                  </div>
+                  
+                  <div class="member-skills">
+                    <div class="skill">
+                      <span class="skill-name" data-en="UI/UX Design" data-ru="UI/UX дизайн">UI/UX Design</span>
+                      <div class="skill-bar">
+                        <div class="skill-level" style="width: 92%"></div>
+                      </div>
+                    </div>
+                    <div class="skill">
+                      <span class="skill-name" data-en="Product Design" data-ru="Продуктовый дизайн">Product Design</span>
+                      <div class="skill-bar">
+                        <div class="skill-level" style="width: 88%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Achievements Section (Mission Logs) -->
+      <section class="achievements-section">
+        <div class="container">
+          <div class="section-header">
+            <h2><span data-en="Mission" data-ru="История">Mission</span> <span class="highlight" data-en="Logs" data-ru="команды">Logs</span></h2>
+            <p class="section-subtitle" data-en="Our journey in IT Cup so far"
+               data-ru="Наш путь в IT Cup">
+              Our journey in IT Cup so far
+            </p>
+          </div>
+          
+          <div class="achievements-grid">
+            <!-- IT Cup 2025 Card -->
+            <div class="achievement-card featured">
+              <div class="achievement-icon">
+                <img src="assets/elevatehr.png" alt="ElevateHR"/>
+              </div>
+              <div class="achievement-content">
+                <h3>IT Cup 2025</h3>
+                <p class="achievement-subtitle" data-en="Qualifying Round · MTC Case" data-ru="Квалификация · Кейс МТС">Qualifying Round · MTC Case</p>
+                <p class="achievement-description" data-en="Created an HR automation system using MWS Tables and a Telegram bot hosted on a home server. The bot alerted employees about tasks, leave approvals, and rejections."
+                   data-ru="Создали систему автоматизации HR с использованием MWS Tables и Telegram бота на домашнем сервере. Бот оповещал сотрудников о задачах, одобрении и отказе в отпуске.">
+                  Created an HR automation system using MWS Tables and a Telegram bot hosted on a home server. The bot alerted employees about tasks, leave approvals, and rejections.
+                </p>
+                <a href="https://drive.google.com/file/d/1SJ8D2poCgWrI0lKxaDIKqLSX-YScnd_Y/view" class="achievement-link" target="_blank">
+                  <i class="fas fa-video"></i> <span data-en="Watch Application" data-ru="Смотреть заявку">Watch Application</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Finals Card -->
+            <div class="achievement-card featured">
+              <div class="achievement-icon">
+                <img src="assets/changellenge.png" alt="Changellenge"/>
+              </div>
+              <div class="achievement-content">
+                <h3>IT Cup 2025 Finals</h3>
+                <p class="achievement-subtitle" data-en="Alfa Bank · Alfa Translate" data-ru="Альфа-Банк · Alfa Translate">Alfa Bank · Alfa Translate</p>
+                <p class="achievement-description" data-en="Designed an AI system from scratch including hardware, software, protocols, and working mechanism. Performed AI throughput calculations for the MVP."
+                   data-ru="Разработали AI систему с нуля, включая аппаратное обеспечение, программное обеспечение, протоколы и механизм работы. Провели расчеты пропускной способности AI для MVP.">
+                  Designed an AI system from scratch including hardware, software, protocols, and working mechanism. Performed AI throughput calculations for the MVP.
+                </p>
+                <a href="https://drive.google.com/file/d/1cHWRVpMsJ-9bVt-exaJYgq-kIGPz4vyM/view" class="achievement-link" target="_blank">
+                  <i class="fas fa-calculator"></i> <span data-en="Throughput Calculation" data-ru="Расчет пропускной способности">Throughput Calculation</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Special Achievement: Only international team -->
+            <div class="achievement-card">
+              <div class="achievement-icon">
+                <i class="fas fa-globe"></i>
+              </div>
+              <div class="achievement-content">
+                <h3 data-en="Only International Team" data-ru="Единственная интернациональная команда">Only International Team</h3>
+                <p data-en="From 2600+ participants, we were the only team with only international students to reach the finals."
+                   data-ru="Из 2600+ участников мы были единственной командой, состоящей только из иностранных студентов, дошедшей до финала.">
+                  From 2600+ participants, we were the only team with only international students to reach the finals.
+                </p>
+              </div>
+            </div>
+
+            <!-- Nomination for Courage -->
+            <div class="achievement-card nomination">
+              <div class="achievement-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="achievement-content">
+                <h3 data-en="Номинация за смелость" data-ru="Номинация за смелость">Номинация за смелость</h3>
+                <p data-en="Received the Courage Nomination for our exceptional journey and determination."
+                   data-ru="Получили номинацию за смелость за наш исключительный путь и решимость.">
+                  Received the Courage Nomination for our exceptional journey and determination.
+                </p>
+                <div class="certificate-links">
+                  <a href="assets/certificates/siona-courage.jpg" class="cert-link" target="_blank">Siona</a>
+                  <span>|</span>
+                  <a href="assets/certificates/aditya-courage.jpg" class="cert-link" target="_blank">Aditya</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Join Mission Section with Formspree Form -->
+      <section id="join" class="join-section">
+        <div class="container">
+          <div class="join-content">
+            <h2><span data-en="Join" data-ru="Присоединяйся">Join</span> <span class="highlight" data-en="Our Mission" data-ru="к нам">Our Mission</span></h2>
+            <p class="join-text" data-en="Interested in collaborating or just want to connect? Drop us a message!"
+               data-ru="Хочешь сотрудничать или просто связаться? Напиши нам!">
+              Interested in collaborating or just want to connect? Drop us a message!
+            </p>
+            
+            <form action="https://formspree.io/f/your-form-id" method="POST" class="join-form" id="joinForm">
+              <!-- Name -->
+              <div class="form-group">
+                <label for="name" data-en="Full Name *" data-ru="Полное имя *">Full Name *</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe / Иван Иванов">
+              </div>
+              
+              <!-- Contact (Email or Phone) -->
+              <div class="form-group">
+                <label for="contact" data-en="Email or Phone *" data-ru="Email или телефон *">Email or Phone *</label>
+                <input type="text" id="contact" name="contact" required placeholder="email@example.com / +7 999 123 4567">
+              </div>
+              
+              <!-- Telegram Username -->
+              <div class="form-group">
+                <label for="telegram" data-en="Telegram Username" data-ru="Telegram username">Telegram Username</label>
+                <div class="input-prefix">
+                  <span class="prefix">@</span>
+                  <input type="text" id="telegram" name="telegram" placeholder="username">
+                </div>
+              </div>
+              
+              <!-- Education Level -->
+              <div class="form-group">
+                <label for="education-level" data-en="Education Level *" data-ru="Уровень образования *">Education Level *</label>
+                <select id="education-level" name="education_level" required>
+                  <option value="" data-en="Select..." data-ru="Выберите..." disabled selected>Select...</option>
+                  <option value="bachelor" data-en="Bachelor's" data-ru="Бакалавриат">Bachelor's</option>
+                  <option value="master" data-en="Master's" data-ru="Магистратура">Master's</option>
+                  <option value="phd" data-en="PhD" data-ru="Аспирантура">PhD</option>
+                  <option value="other" data-en="Other" data-ru="Другое">Other</option>
+                </select>
+              </div>
+              
+              <!-- Education Institution -->
+              <div class="form-group">
+                <label for="institution" data-en="University/Institution *" data-ru="Университет/Институт *">University/Institution *</label>
+                <input type="text" id="institution" name="institution" required placeholder="RANEPA / MAI / etc.">
+              </div>
+              
+              <!-- About Yourself (Optional) -->
+              <div class="form-group">
+                <label for="about" data-en="Tell us about yourself (optional)" data-ru="Расскажи о себе (необязательно)">Tell us about yourself (optional)</label>
+                <textarea id="about" name="about" rows="4" placeholder="Your background, interests, or why you want to connect..."></textarea>
+                <small data-en="You can also include a link to your CV" data-ru="Также можно добавить ссылку на резюме">You can also include a link to your CV</small>
+              </div>
+              
+              <!-- Formspree redirect (optional) -->
+              <input type="hidden" name="_next" value="https://cybernauts.team/thanks.html">
+              <input type="hidden" name="_subject" value="New message from CYB3RN4UT5 website">
+              
+              <button type="submit" class="submit-btn">
+                <span data-en="Send Message" data-ru="Отправить">Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+            
+            <div class="social-links-large">
+              <a href="https://t.me/cybernauts_team" class="social-link" target="_blank">
+                <i class="fab fa-telegram"></i> <span data-en="Telegram Channel" data-ru="Telegram канал">Telegram Channel</span>
+              </a>
+              <a href="https://github.com/cyb3rn4ut5" class="social-link" target="_blank">
+                <i class="fab fa-github"></i> <span data-en="GitHub" data-ru="GitHub">GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <img src="assets/cybernauts-logo.png" alt="CYB3RN4UT5 Logo" />
+              <div class="footer-logo-text">
+                <h3 class="logo-name">CYB3RN4UT5</h3>
+                <p>IT Cup 2026</p>
+              </div>
+            </div>
+            <p class="footer-description" data-en="International team solving business challenges with technology."
+               data-ru="Интернациональная команда, решающая бизнес-задачи с помощью технологий.">
+              International team solving business challenges with technology.
+            </p>
+          </div>
+          
+          <div class="footer-section">
+            <h4 data-en="Quick Links" data-ru="Быстрые ссылки">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#home" data-en="Home" data-ru="Главная">Home</a></li>
+              <li><a href="#mission" data-en="Mission" data-ru="Миссия">Mission</a></li>
+              <li><a href="#crew" data-en="Crew" data-ru="Команда">Crew</a></li>
+              <li><a href="#join" data-en="Join Mission" data-ru="Присоединиться">Join Mission</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h4 data-en="Connect" data-ru="Связаться">Connect</h4>
+            <ul class="footer-links">
+              <li><a href="https://t.me/cybernauts_team" target="_blank"><i class="fab fa-telegram"></i> Telegram</a></li>
+              <li><a href="https://github.com/cybernauts" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h4 data-en="Education" data-ru="Образование">Education</h4>
+            <ul class="footer-links">
+              <li><a href="https://www.ranepa.ru/" target="_blank" class="institution-link">РАНХиГС</a> <span class="lang-indicator">(RU)</span></li>
+              <li><a href="https://www.ranepa.ru/eng/" target="_blank" class="institution-link">RANEPA</a> <span class="lang-indicator">(EN)</span></li>
+              <li><a href="https://mai.ru/" target="_blank" class="institution-link">МАИ</a> <span class="lang-indicator">(RU)</span></li>
+              <li><a href="https://en.mai.ru/" target="_blank" class="institution-link">MAI</a> <span class="lang-indicator">(EN)</span></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2026 CYB3RN4UT5 </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    window.scrollTo(0, 0);
+    
+    // ============================================
+    // PRELOADER
+    // ============================================
+    const preloaderOverlay = document.getElementById('preloaderOverlay');
+    const pageContent = document.getElementById('pageContent');
+    const preloaderTypewriter = document.getElementById('preloader-typewriter');
+    const preloaderSubtitle = document.getElementById('preloader-subtitle');
+    
+    function runPreloader() {
+      const text = "CYB3RN4UT5";
+      const glitchChars = ['░', '▒', '▓', '█', '▄', '▀', '#', '@', '!', '&', '*'];
+      let index = 0;
+      preloaderTypewriter.textContent = "";
+      
+      function glitchChar() {
+        return glitchChars[Math.floor(Math.random() * glitchChars.length)];
+      }
+      
+      function type() {
+        if (index < text.length) {
+          preloaderTypewriter.textContent = preloaderTypewriter.textContent.slice(0, index) + glitchChar();
+          setTimeout(() => {
+            preloaderTypewriter.textContent = preloaderTypewriter.textContent.slice(0, index) + text.charAt(index);
+            index++;
+            setTimeout(type, 120);
+          }, 80);
+        } else {
+          // Show subtitle after main text
+          setTimeout(() => {
+            preloaderSubtitle.textContent = "IT Cup 2026";
+            preloaderSubtitle.style.opacity = '1';
+          }, 300);
+          setTimeout(showMainContent, 1500);
+        }
+      }
+      type();
+    }
+    
+    function showMainContent() {
+      preloaderOverlay.classList.add('hidden');
+      setTimeout(() => {
+        pageContent.classList.add('visible');
+        animateStats();
+      }, 1000);
+    }
+    
+    // ============================================
+    // LANGUAGE TOGGLE
+    // ============================================
+    const langEn = document.getElementById('langEn');
+    const langRu = document.getElementById('langRu');
+    let currentLang = 'en';
+    
+    function setLanguage(lang) {
+      currentLang = lang;
+      
+      // Update active button
+      if (lang === 'en') {
+        langEn.classList.add('active');
+        langRu.classList.remove('active');
+      } else {
+        langRu.classList.add('active');
+        langEn.classList.remove('active');
+      }
+      
+      // Update all translatable elements
+      document.querySelectorAll('[data-en][data-ru]').forEach(el => {
+        if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA' || el.tagName === 'SELECT') {
+          // Handle form elements
+          if (el.placeholder) {
+            el.placeholder = el.getAttribute(`data-${lang}`);
+          }
+        } else if (el.tagName === 'OPTION') {
+          el.textContent = el.getAttribute(`data-${lang}`);
+        } else {
+          el.textContent = el.getAttribute(`data-${lang}`);
+        }
+      });
+      
+      // Update form labels separately
+      document.querySelectorAll('label[data-en][data-ru]').forEach(label => {
+        label.textContent = label.getAttribute(`data-${lang}`);
+      });
+      
+      // Update form small text
+      document.querySelectorAll('small[data-en][data-ru]').forEach(small => {
+        small.textContent = small.getAttribute(`data-${lang}`);
+      });
+      
+      // Update select default option
+      const select = document.getElementById('education-level');
+      if (select) {
+        const firstOption = select.options[0];
+        if (firstOption) {
+          firstOption.textContent = firstOption.getAttribute(`data-${lang}`);
+        }
+      }
+      
+      console.log(`Language switched to ${lang}`);
+    }
+    
+    if (langEn && langRu) {
+      langEn.addEventListener('click', () => setLanguage('en'));
+      langRu.addEventListener('click', () => setLanguage('ru'));
+    }
+    
+    // ============================================
+    // NAVIGATION
+    // ============================================
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const navLinks = document.querySelector('.nav-links');
+    const navbar = document.querySelector('.navbar');
+    const backToTop = document.getElementById('backToTop');
+    
+    // Hamburger menu
+    if (hamburgerBtn && navLinks) {
+      function toggleMenu(e) {
+        e.preventDefault();
+        hamburgerBtn.classList.toggle('active');
+        navLinks.classList.toggle('open');
+        if (navLinks.classList.contains('open')) {
+          document.body.style.overflow = 'hidden';
+          document.body.classList.add('menu-open');
+        } else {
+          document.body.style.overflow = '';
+          document.body.classList.remove('menu-open');
+        }
+      }
+      
+      hamburgerBtn.addEventListener('click', toggleMenu);
+      
+      // Close menu when clicking anywhere outside
+      document.addEventListener('click', function(event) {
+        if (navLinks.classList.contains('open') && 
+            !navLinks.contains(event.target) && 
+            !hamburgerBtn.contains(event.target)) {
+          hamburgerBtn.classList.remove('active');
+          navLinks.classList.remove('open');
+          document.body.style.overflow = '';
+          document.body.classList.remove('menu-open');
+        }
+      });
+      
+      // Close menu when clicking on a link
+      document.querySelectorAll('.nav-link, .nav-cta').forEach(link => {
+        link.addEventListener('click', () => {
+          hamburgerBtn.classList.remove('active');
+          navLinks.classList.remove('open');
+          document.body.style.overflow = '';
+          document.body.classList.remove('menu-open');
+        });
+      });
+    }
+    
+    // Navbar scroll effect
+    if (navbar) {
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+    }
+    
+    // Back to top button
+    if (backToTop) {
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+          backToTop.classList.add('visible');
+        } else {
+          backToTop.classList.remove('visible');
+        }
+      });
+      
+      backToTop.addEventListener('click', function() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    }
+    
+    // ============================================
+    // LOADING BAR
+    // ============================================
+    const loadingBar = document.getElementById('loadingBar');
+    
+    function startLoadingBar() {
+      loadingBar.style.transition = 'none';
+      loadingBar.style.width = '0';
+      loadingBar.style.display = 'block';
+      loadingBar.classList.add('active');
+      
+      void loadingBar.offsetWidth;
+      
+      loadingBar.style.transition = 'width 0.8s cubic-bezier(.4,0,.2,1)';
+      loadingBar.style.width = '100%';
+    }
+    
+    // Add loading bar to navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        startLoadingBar();
+        
+        setTimeout(() => {
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+          }
+          loadingBar.style.width = '0';
+          setTimeout(() => {
+            loadingBar.classList.remove('active');
+          }, 300);
+        }, 850);
+      });
+    });
+    
+    // Mouse trail effect
+    const mouseTrail = document.querySelector('.mouse-trail');
+    if (!('ontouchstart' in window) && mouseTrail) {
+      let mouseX = 0, mouseY = 0, trailX = 0, trailY = 0;
+      
+      document.addEventListener('mousemove', function(e) {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        mouseTrail.classList.add('active');
+      });
+      
+      function animateTrail() {
+        trailX += (mouseX - trailX) * 0.2;
+        trailY += (mouseY - trailY) * 0.2;
+        mouseTrail.style.left = trailX + 'px';
+        mouseTrail.style.top = trailY + 'px';
+        requestAnimationFrame(animateTrail);
+      }
+      animateTrail();
+      
+      document.addEventListener('mouseleave', function() {
+        mouseTrail.classList.remove('active');
+      });
+      
+      document.addEventListener('mouseenter', function() {
+        mouseTrail.classList.add('active');
+      });
+    }
+    
+    // Stats counter
+    const statNumbers = document.querySelectorAll('.stat-number');
+    
+    function animateNumber(element, target) {
+      if (target.toString().includes('+')) {
+        element.textContent = target;
+        return;
+      }
+      
+      const increment = target / 30;
+      let current = 0;
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          current = target;
+          clearInterval(timer);
+        }
+        element.textContent = Math.floor(current) + (target > 1000 ? '+' : '');
+      }, 40);
+    }
+    
+    function animateStats() {
+      statNumbers.forEach(stat => {
+        const target = stat.getAttribute('data-count');
+        if (target.includes('+')) {
+          stat.textContent = target;
+        } else {
+          animateNumber(stat, parseInt(target));
+        }
+      });
+    }
+    
+    // Active navigation highlighting
+    const sections = document.querySelectorAll('section[id]');
+    
+    function highlightNavigation() {
+      const scrollY = window.pageYOffset;
+      
+      sections.forEach(section => {
+        const sectionHeight = section.offsetHeight;
+        const sectionTop = section.offsetTop - 100;
+        const sectionId = section.getAttribute('id');
+        const navLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
+        
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+          if (navLink) {
+            document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+            navLink.classList.add('active');
+          }
+        }
+      });
+    }
+    
+    window.addEventListener('scroll', highlightNavigation);
+    
+    // Form submission handling
+    const joinForm = document.getElementById('joinForm');
+    if (joinForm) {
+      joinForm.addEventListener('submit', function(e) {
+        // Show loading state
+        const submitBtn = this.querySelector('.submit-btn');
+        const originalText = submitBtn.innerHTML;
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+        submitBtn.disabled = true;
+        
+        // Formspree will handle the actual submission
+        // We'll re-enable if there's an error (handled by Formspree redirect)
+        setTimeout(() => {
+          submitBtn.innerHTML = originalText;
+          submitBtn.disabled = false;
+        }, 3000);
+      });
+    }
+    
+    // Initialize
+    runPreloader();
+    
+    console.log('%c🚀 CYB3RN4UT5 - IT Cup 2026', 'color: #00ffff; font-size: 18px; font-weight: bold;');
+    console.log('%c🌍 International team solving business cases', 'color: #ff00ff; font-size: 14px;');
+  });
+  </script>
+</body>
+</html>
